@@ -38,5 +38,9 @@ add_executable(perspective perspective)
 target_link_libraries(perspective ${OpenCV_LIBS})
 SET_TARGET_PROPERTIES(perspective PROPERTIES LINKER_LANGUAGE CXX)
 
+project(TransFiltersRemap)
+add_executable(remap remap)
+target_link_libraries(remap ${OpenCV_LIBS})
+SET_TARGET_PROPERTIES(remap PROPERTIES LINKER_LANGUAGE CXX)
 
 
